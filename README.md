@@ -100,4 +100,5 @@ En esencia, este código ayuda a que el código JavaScript sea más limpio, cons
 
 ## Despliegue
 
-**[Mi repositorio](gudielvfx.github.io/web-moderna/)**
+💻 **[Mi repositorio](https://github.com/GudielVFX/web-moderna)** 💻
+
