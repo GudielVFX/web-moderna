@@ -85,5 +85,18 @@ La web ya no es solo un lugar para leer información. Ahora podemos interactuar 
 - `"error"`: Marca un error y hace fallar la verificación
 - `"warn"`: Solo muestra una advertencia sin hacer fallar la verificación
 
+##### ESLint in a nutshell
+
+ESLint, una herramienta que ayuda a mantener la calidad y consistencia del código JavaScript.
+
+En resumen, este código:
+
+- **Establece reglas de estilo:** Define cómo debe escribirse el código, incluyendo la sangría, el uso de comillas y el punto y coma.
+- **Detecta errores comunes:** Busca errores de sintaxis, variables no utilizadas, etc.
+Mejora la legibilidad: Ayuda a que el código sea más fácil de leer y entender.
+- **Asegura la compatibilidad:** Verifica que el código sea compatible con diferentes navegadores y versiones de JavaScript.
+
+En esencia, este código ayuda a que el código JavaScript sea más limpio, consistente y libre de errores.
+
 ### Despliegue
 **[Deploy](gudielvfx.github.io/web-moderna/)**
