@@ -71,7 +71,7 @@ La web ya no es solo un lugar para leer información. Ahora podemos interactuar 
 }
 ```
 
-#### Aquí se definen reglas específicas:
+### Aquí se definen reglas específicas:
 
 - `"indent": ["error", 2]:` Obliga a usar 2 espacios para la indentación
 - `"linebreak-style": ["error", "unix"]`: Fuerza el uso de saltos de línea estilo Unix (\n)
@@ -80,12 +80,12 @@ La web ya no es solo un lugar para leer información. Ahora podemos interactuar 
 - `"no-unused-vars": "warn"`: Advierte sobre variables declaradas pero no usadas
 - `"no-console": "warn"`:Advierte cuando se usa console.log()
 
-#### Los niveles de severidad en las reglas son:
+### Los niveles de severidad en las reglas son:
 
 - `"error"`: Marca un error y hace fallar la verificación
 - `"warn"`: Solo muestra una advertencia sin hacer fallar la verificación
 
-##### ESLint in a nutshell
+## ESLint in a nutshell
 
 ESLint, una herramienta que ayuda a mantener la calidad y consistencia del código JavaScript.
 
@@ -98,5 +98,6 @@ Mejora la legibilidad: Ayuda a que el código sea más fácil de leer y entender
 
 En esencia, este código ayuda a que el código JavaScript sea más limpio, consistente y libre de errores.
 
-### Despliegue
+## Despliegue
+
 **[Deploy](gudielvfx.github.io/web-moderna/)**
