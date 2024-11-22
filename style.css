@@ -1,45 +1,59 @@
 /* restaura la web*/
 /* mobile first */ 
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #919191; 
 }
 
-nav{
+nav {
     background: linear-gradient(15deg, #1bce89, #001482);
     padding: 20px;
     position: absolute;
     width: 100%; 
-    bottom:0; /* lleva los botones abajo*/
+    bottom: 0;
+    height: 60px;
 }
 
 nav > ul {
     list-style: none;
-    display: flex; /* pasa a ser horizonatal */ 
-    justify-content: space-between;
+    text-align: center; /* centra los elementos inline-block */
+    font-size: 0; /* elimina el espacio entre elementos inline-block */
 }
 
+nav > ul > li {
+    display: inline-block;
+    width: 33.33%; /* asume que hay 3 elementos */
+    font-size: 16px; /* restaura el tamaño de fuente */
+    vertical-align: middle;
+}
 
-nav > ul > li >a {
+nav > ul > li > a {
     text-decoration: none;
     color: #fff;
+    display: block; /* hace que todo el área sea clickeable */
+    text-align: center;
 }
 
-/* Uso del media query */
-/* para pantallas de 600px en adelante */
+main {
+    padding: 20px;
+}
 
+/* para pantallas de 600px en adelante */
 @media (min-width: 600px) {
     body {
         background-color: indianred;
     }
     nav {
-        top:0;
+        top: 0;
         bottom: auto;
+    }
+    main {
+        padding-top: 80px;
     }
 }
