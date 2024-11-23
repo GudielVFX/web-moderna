@@ -1,3 +1,4 @@
+/* Reset y configuraciones básicas */
 * {
     margin: 0;
     padding: 0;
@@ -38,11 +39,13 @@ nav > ul > li > a {
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
 nav > ul > li > a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo cambia a semi-transparente */
+    color: #000; /* Texto cambia a negro */
+    transform: scale(1.1); /* Escala ligeramente al pasar el mouse */
 }
 
 /* Estilos del main y sections */
@@ -88,12 +91,14 @@ section a {
     color: white;
     text-decoration: none;
     border-radius: 25px;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
 }
 
 section a:hover {
-    background-color: #16a870;
-    transform: translateY(-2px);
+    background-color: #16a870; /* Cambia color de fondo */
+    transform: translateY(-2px) scale(1.05); /* Eleva y aumenta el tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra adicional */
+    color: #f1f1f1; /* Texto ligeramente más claro */
 }
 
 /* Media query para pantallas más grandes (>= 600px) */
@@ -139,36 +144,50 @@ section a:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    body{
+    body {
         background-color: #F9D2E5;
+    }
+    section > h2 {
+        color: #F9D2E5;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    body{
+    body {
         background-color: #D79ECB;
+    }
+    section > h2 {
+        color: #D79ECB;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    body{
+    body {
         background-color: #9F71B2;
     }
-
+    section > h2 {
+        color: #9F71B2;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    body{
-        background-color: ##785CA7;
+    body {
+        background-color: #785CA7;
+    }
+    section > h2 {
+        color: #785CA7;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    body{
+    body {
         background-color: #282C6C;
+    }
+    section > h2 {
+        color: #282C6C;
     }
 }
